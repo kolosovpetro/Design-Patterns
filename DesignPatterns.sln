@@ -30,6 +30,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DesignPatterns.State.Tests"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DesignPatterns.Prototype.Tests", "DesignPatterns.Prototype.Tests\DesignPatterns.Prototype.Tests.csproj", "{3DD16706-1F5E-4A91-9905-C2A7C24B14CA}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DesignPatterns.State.UI", "DesignPatterns.State.UI\DesignPatterns.State.UI.csproj", "{500C3CB3-2BC7-4D18-8546-B468E71BF75A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -96,5 +98,9 @@ Global
 		{3DD16706-1F5E-4A91-9905-C2A7C24B14CA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3DD16706-1F5E-4A91-9905-C2A7C24B14CA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3DD16706-1F5E-4A91-9905-C2A7C24B14CA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{500C3CB3-2BC7-4D18-8546-B468E71BF75A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{500C3CB3-2BC7-4D18-8546-B468E71BF75A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{500C3CB3-2BC7-4D18-8546-B468E71BF75A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{500C3CB3-2BC7-4D18-8546-B468E71BF75A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

@@ -12,7 +12,9 @@ namespace DesignPatterns.Builder.Tests.Tests
         public void Builder_Test()
         {
             IBuilder builder = new BmwBuilder();
-            var car = builder.Build();
+            IDirector director = new Director.Director(builder);
+            director.Construct();
+            var car = builder.ReturnCar();
             car.Brand.Should().Be("BMW");
             car.Color.Should().Be("Black");
             car.Model.Should().Be("M3");

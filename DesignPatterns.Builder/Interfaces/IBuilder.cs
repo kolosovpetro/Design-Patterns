@@ -2,6 +2,13 @@
 {
     public interface IBuilder
     {
-        ICar Build();
+        void SetBrand();
+        void SetModel();
+        void SetColor();
+        void SetWheels();
+        void SetSeats();
+        void SetEngineVolume();
+        void SetPrice();
+        ICar ReturnCar();
     }
 }

@@ -6,17 +6,21 @@ namespace DesignPatterns.Builder.Builders
     public class BmwBuilder : IBuilder
     {
         private readonly ICar _car = new Car();
+        
+        public void SetBrand() => _car.Brand = "BMW";
 
-        public ICar Build()
-        {
-            _car.Brand = "BMW";
-            _car.Color = "Black";
-            _car.Model = "M3";
-            _car.EngineVolume = 3;
-            _car.NumberOfSeats = 4;
-            _car.NumberOfWheels = 4;
-            _car.Price = 1000;
-            return _car;
-        }
+        public void SetModel() => _car.Model = "M3";
+
+        public void SetColor() => _car.Color = "Black";
+
+        public void SetWheels() => _car.NumberOfWheels = 4;
+
+        public void SetSeats() => _car.NumberOfSeats = 4;
+
+        public void SetEngineVolume() => _car.EngineVolume = 3;
+
+        public void SetPrice() => _car.Price = 1000;
+
+        public ICar ReturnCar() => _car;
     }
 }

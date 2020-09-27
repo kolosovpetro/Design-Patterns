@@ -5,7 +5,7 @@ namespace DesignPatterns.Iterator.Implementation
     public class Iterator : IEnumerator
     {
         private readonly int[] _collection;
-        private int _index;
+        private int _index = -1;
 
         public Iterator(int[] collection)
         {
@@ -14,21 +14,14 @@ namespace DesignPatterns.Iterator.Implementation
 
         public bool MoveNext()
         {
+            _index++;
             return _index < _collection.Length;
         }
 
-        public void Reset()
-        {
-            _index = 0;
-        }
+        public void Reset() => _index = -1;
 
         public object Current => GetCurrent();
 
-        private object GetCurrent()
-        {
-            var currentIndex = _index;
-            _index++;
-            return _collection[currentIndex];
-        }
+        private object GetCurrent() => _collection[_index];
     }
 }

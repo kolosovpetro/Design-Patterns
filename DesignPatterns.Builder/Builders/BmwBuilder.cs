@@ -6,7 +6,7 @@ namespace DesignPatterns.Builder.Builders
     public class BmwBuilder : IBuilder
     {
         private readonly ICar _car = new Car();
-        
+
         public void SetBrand() => _car.Brand = "BMW";
 
         public void SetModel() => _car.Model = "M3";
